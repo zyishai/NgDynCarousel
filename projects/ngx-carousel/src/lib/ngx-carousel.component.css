@@ -1,0 +1,39 @@
+:host {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(227, 240, 245);
+  }
+  
+  .carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    transition: .5s;
+  }
+  
+  .action-btns {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+  }
+  
+  .action-btns button {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+  }
+  
+  .action-btns button:not(:disabled):hover {
+    background-color: rgb(194, 194, 194);
+  }

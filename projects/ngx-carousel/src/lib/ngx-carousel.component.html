@@ -1,0 +1,19 @@
+<div class="carousel" [ngStyle]="carouselStyle">
+    <img 
+      class="item" 
+      *ngFor="let url of images" 
+      [src]="url"
+      [ngStyle]="imageStyle">
+  </div>
+  <div class="action-btns" [ngStyle]="_buttonsContainerStyle">
+    <button 
+      class="prev" 
+      (click)="prev()"
+      [disabled]="current<=0"
+      [ngStyle]="_buttonStyle">&#8592;</button>
+    <button 
+      class="next" 
+      (click)="next()"
+      [disabled]="current+imagesPerPage>images.length-1"
+      [ngStyle]="_buttonStyle">	&#8594;</button>
+  </div>
