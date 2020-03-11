@@ -5,12 +5,12 @@
   "author": "Yishai Zehavi",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/zyishai/NgDynCarousel.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/zyishai/NgDynCarousel/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/zyishai/NgDynCarousel",
   "keywords": [
     "angular",
     "javascript",
