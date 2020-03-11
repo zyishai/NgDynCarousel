@@ -16,7 +16,7 @@
       "dom"
     ],
     "paths": {
-      "ngx-carousel": [
+      "ng-dynamic-carousel": [
         "dist/ngx-carousel/ngx-carousel",
         "dist/ngx-carousel"
       ]

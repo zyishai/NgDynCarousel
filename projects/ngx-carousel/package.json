@@ -1,6 +1,6 @@
 {
-  "name": "ngx-carousel",
-  "version": "1.0.0",
+  "name": "ng-dynamic-carousel",
+  "version": "1.0.1",
   "description": "Dynamic carousel component for angular.",
   "author": "Yishai Zehavi",
   "repository": {

@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'ngx-carousel',
+  selector: 'ng-carousel',
   templateUrl: './ngx-carousel.component.html',
   styleUrls: ['./ngx-carousel.component.css']
 })
-export class NgxCarouselComponent implements OnInit {
+export class NgDynamicCarouselComponent implements OnInit {
   @Input() images = [
     'https://picsum.photos/200/300',
     'https://picsum.photos/250/310',

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxCarouselModule } from 'ngx-carousel';
+import { NgDynamicCarouselModule } from 'ng-dynamic-carousel';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgxCarouselModule
+    NgDynamicCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
