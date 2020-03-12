@@ -1,24 +1,52 @@
-# NgxCarousel
+# Ng Dynamic Carousel
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+Dynamic carousel component for Angular.
 
-## Code scaffolding
+ ## Installation
 
-Run `ng generate component component-name --project NgxCarousel` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project NgxCarousel`.
-> Note: Don't forget to add `--project NgxCarousel` or else it will be added to the default project in your `angular.json` file. 
+ * Run `npm install ng-dynamic-carousel --save` or `yarn add ng-dynamic-carousel --save`.
+ * Add `NgDynamicCarouselModule` in your `imports` array.
+ * Use `<ng-carousel></ng-carousel>` in your HTML template.
+ * Enjoy! 😄
 
-## Build
+## Configuration
 
-Run `ng build NgxCarousel` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Prop Name | Type | Note | Default |
+| - | - | - | - |
+| `images` | string[] | List of images urls. | |
+| `startsAt` | number | Index of the first image to start from. | 0 |
+| `imagesPerPage` | number | | 2 |
+| `imageWidth` | number | | 10 |
+| `imageGap` | number | | 10 |
+| `containerHeight` | number | | 20 |
+| `units` | string | | rem |
 
-## Publishing
 
-After building your library with `ng build NgxCarousel`, go to the dist folder `cd dist/ngx-carousel` and run `npm publish`.
+ ## Example Usage
 
-## Running unit tests
+_feature.module.ts_
+ ```js
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgDynamicCarouselModule } from 'ng-dynamic-carousel';
 
-Run `ng test NgxCarousel` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import { FeatureComponent } from './feature.component';
 
-## Further help
+@NgModule({
+  declarations: [FeatureComponent],
+  imports: [
+    CommonModule,
+    NgDynamicCarouselModule
+  ],
+})
+export class FeatureModule { }
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ ```
+
+_feature.component.html_
+```html
+<h1>My Travel</h1>
+
+<ng-carousel imagesPerPage="3"></ng-carousel>
+```
+ 
